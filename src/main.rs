@@ -70,7 +70,7 @@ fn cars_sim(car_via1: char, car_accel1: f64, car_via2: char, car_accel2: f64) ->
             current_speed1 = max_speed1;
         }
 
-        println!("Car {} in {}{} position, reaching {} speed with {} acceleration.", chassis1, via1, current_pos1, current_speed1, current_accel1);
+        println!("Car 1 {} in {}{} position, reaching {} speed with {} acceleration.", chassis1, via1, current_pos1, current_speed1, current_accel1);
 
         //Car 2 update
         let old_pos = current_pos2;
