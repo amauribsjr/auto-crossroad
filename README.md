@@ -1,11 +1,20 @@
-# Auto Crossroad simulation system 
-_(Still in early development)_
+## Auto Crossroad Simulation System
 
-- The project is still being meticulously developed;<br>
-  When there's significant progress in its concept and engineering,<br>
-  I will update the README to reflect its full scope.
+A traffic intersection simulation system built in Rust, focused on modeling vehicle behavior and control logic.
 
-```
-- Intersection system with realistic vehicle automation simulation,
-  including traffic lights, collisions, and many other applied physics aspects.
-```
+### Current scope
+
+- Basic intersection modeling
+- Vehicle flow simulation
+- Traffic control logic (early stage)
+
+### Goals
+
+- Realistic vehicle behavior simulation
+- Traffic light coordination
+- Collision handling and safety logic
+- Exploration of concurrency and system modeling in Rust
+
+### Status
+
+🟡 In active development — core simulation concepts are being implemented and refined
