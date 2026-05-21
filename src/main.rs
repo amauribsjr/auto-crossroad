@@ -55,7 +55,6 @@ fn cars_sim(car_via1: char, car_accel1: f64, car_via2: char, car_accel2: f64) ->
         let old_pos = current_pos1;
         current_pos1 = current_pos1 + current_speed1 * (tickms/1000.0) + current_accel1 * (tickms/1000.0) * (tickms/1000.0) / 2.0;
         current_speed1 = current_speed1 + current_accel1 * (tickms/1000.0);
-
         //Car 1 restrictions
         if current_pos1 < old_pos {
             current_pos1 = old_pos;
@@ -66,13 +65,11 @@ fn cars_sim(car_via1: char, car_accel1: f64, car_via2: char, car_accel2: f64) ->
         if current_speed1 > max_speed1 {
             current_speed1 = max_speed1;
         }
-
         println!("Car 1 {} in {}{} position, reaching {} speed with {} acceleration.", chassis1, via1, current_pos1, current_speed1, current_accel1);
         //Car 2 update
         let old_pos = current_pos2;
         current_pos2 = current_pos2 + current_speed2 * (tickms/1000.0) + current_accel2 * (tickms/1000.0) * (tickms/1000.0) / 2.0;
         current_speed2 = current_speed2 + current_accel2 * (tickms/1000.0);
-
         //Car 2 restrictions
         if current_pos2 < old_pos {
             current_pos2 = old_pos;
